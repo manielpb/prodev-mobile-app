@@ -1,5 +1,5 @@
 import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
-import { styles } from "@/styles/_join";
+import { styles } from "@/styles/_mainstyle";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 
@@ -12,7 +12,7 @@ export default function Index() {
           <Image source={require('@/assets/images/logo.png')} />
         </View>
 
-        <Text style={styles.largeText}>Create your</Text>
+        <Text style={styles.largeText}>Sign in to your</Text>
         <Text style={styles.largeText}>Account</Text>
         <Text style={styles.smallText}>
           Enter your email and password to sign in.
@@ -25,15 +25,6 @@ export default function Index() {
               styles.inputField
             }/>
           </View>
-
-          <View style={{ marginTop: 20}}>
-            <Text style={ styles.placeholderText}>Password</Text>
-            <View style={styles.passwordGroup}>
-              <TextInput style={ { flex: 1}}/>
-              <FontAwesome name="eye-slash" size={24} color="#7E7B7B" />
-            </View>
-          </View>
-
 
           <View style={{ marginTop: 20}}>
             <Text style={ styles.placeholderText}>Password</Text>
